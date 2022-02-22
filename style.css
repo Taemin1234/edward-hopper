@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: #0E2D45;
+}
+
+hr {
+    margin: 10px 0;
+    width: 100%;
+}
+
+
+.flex-space-between {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-end {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.flex-center {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-title {
+    width: 350px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.page-title h2 {
+    margin: 40px 10px;
+    text-align: center;
+}
+
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    color: #ffffff;
+    background-color: #000000;
+
+    box-sizing: border-box;
+    padding: 0 200px;
+
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.nav-bar-scr {
+    height: 50px;
+}
+
+.nav-up {
+    top: -100px;
+}
+
+.nav-down {
+    top: 0px
+}
+
+.title {
+    margin: 10px 20px;
+}
+
+.menu {
+    height: 100%;
+}
+
+.menu li {
+    margin: 10px 30px;
+}
+
+main {
+    width: 70vw;
+    margin: 0 auto;
+
+}
+
+.sec-1 {
+    height: 90vh;
+    width: 100%;
+
+    padding-top: 100px;
+}
+
+.intro-wrap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.rbs {
+    position: absolute;
+    height:89vh;
+    width: 100%;
+
+    left: 50%;
+    transform:translateX(-50%);
+}
+
+.intro-txt {
+    position: absolute;
+    height:89vh;
+    width: 100%;
+
+    left: 50%;
+    transform:translateX(-50%);
+
+    background-color: #000000;
+    opacity: 0.3;
+
+    color: #ffffff;
+    
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.intro-txt p {
+    font-size: 100px;
+}
+
+.intro-txt span {
+    font-size: 50px;
+}
+
+
+
+.sec-2 {
+    height: 700px;
+}
+
+.hopper {
+    width: 400px;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+.hopper-intro {
+    border: solid 10px #306E97;
+    border-radius: 5px;
+    color: #ffffff;
+    height: 50%;
+
+    margin: 30px;
+    padding: 10px;
+}
+
+.sec-3 {
+    height: 6000px;
+}
+
+.work-txt {
+    float: left;
+    width: 35%;
+    line-height: 2;
+
+    color: #ffffff;
+}
+
+.work-img {
+    position: sticky;
+    top: 25%;
+    float: right;
+    width: 60%;
+    margin-bottom: 900px;
+
+}
+
+.nighthwaks {
+    top: 25%;
+    margin-bottom: 900px;
+}
+
+.HBR {
+    top: 20%;
+}
+
+.work-img img {
+    width: 100%;
+}
+
+.sec-4 {
+    height: 850px;
+}
+
+
+.other-works {
+
+    width: 100%;
+    height: 700px;
+
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.slider {
+    position: relative;
+    width: 800px;
+    height: 644px;
+    margin: 0 auto;
+
+
+    background-color: #000000;
+}
+
+
+.slick-list {
+    height: 100% !important; 
+}
+
+.slick-track {
+    
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.slick-slide {
+    
+    display: flex!important;
+    height: inherit !important;
+
+}
+
+.slick-slide img {
+    position: relative;
+}
+
+
+
+
+
+/* .slider .slick-slide {
+    display: inline-block;
+    vertical-align: middle;
+} */
+
+
+
+
+/* 좌우 이전 다음 아이콘 수정 */
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+
+
+    /* 기본 글씨를 사라지게 하기 위해 설정, 대신 넣은 화살표도 사라진다. 화살표 크기를 크게 한다. */
+    font-size: 0;
+    color: transparent;
+    
+
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.slick-prev {
+    left: -100px;
+}
+
+
+/* font를 html로 넣기 힘들때 css로 넣을 때 사용 */
+.slick-prev:before {
+    content:"\f104";
+    font-family: "FontAwesome";
+    color: #ffffff;
+    font-size: 45px;
+}
+
+.slick-next {
+    right: -100px;
+}
+
+.slick-next:before {
+    content: "\f105";
+    color: #ffffff;
+    font-size: 45px;
+    font-family: "FontAwesome";
+}
+
+
+
+
+/* 슬라이드 아래 점 커스텀 */
+.slick-dots {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+
+    height: 20px;
+    position: absolute;
+    margin: 0 auto;
+
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.slick-dots li {
+    margin: 0 10px;
+}
+
+.slick-dots li button {
+    color: transparent;
+    border: none;
+    padding: 0;
+    background-color: grey;
+    opacity: 0.5;
+    border-radius: 50%;
+
+    height: 10px;
+    width: 10px;
+}
+
+.slick-dots .slick-active button {
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+.sec-5 {
+    height: 100vh;
+}
+
+.card-wrap {
+    position: relative;
+    top: 150px;
+
+    width: 45%;
+    height: 360px;
+
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    transition: all 0.7s;
+
+}
+
+.card-img-wrap {
+    width: 100%;
+    height: 180px;
+
+    margin-bottom: 10px;
+    
+}
+
+.card-img-wrap img {
+    width: 50%;
+    height: 100%;
+}
+
+.osc {
+    padding-right: 5px;
+}
+
+.poster {
+    object-fit: contain;
+}
+
+.card-txt-wrap {
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+.card-txt-wrap h4 {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* https://getcssscan.com/css-box-shadow-examples
+
+http://rwdb.kr/interestedeffects/
+
+https://dribbble.com/shots/4140537-Big-City-Lights-series-nr-17 
+
+https://ossam5.tistory.com/148  - 슬라이더 도움
+
+https://post.naver.com/viewer/postView.nhn?volumeNo=30975167&memberNo=15488287&vType=VERTICAL 철길옆의집
+
+https://blog.naver.com/PostView.nhn?blogId=ipssinhada2&logNo=222339440466&categoryNo=29&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search
+- 밤을 지새우는 사람들 설명
+http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=2500&key=20081023.22021212323 
+- 밤지사 인물
+
+https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=jessica1914&logNo=120212834525 =호퍼 작품해석
+
+그라디언트를 사용하여 하이라이트 조명효과
+*/
