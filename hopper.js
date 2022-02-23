@@ -7,6 +7,10 @@ $(function(){
     });
 })
 
+$('.title').on('click',function(){
+    $('html').scrollTop(0);
+})
+
 
 $(window).on('scroll',function(){
     if ($(window).scrollTop() > 400) {
