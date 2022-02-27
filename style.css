@@ -49,6 +49,7 @@ hr {
 .page-title {
     width: 350px;
     margin: 0 auto;
+    padding-top: 30px;
     color: #ffffff;
     font-size: 25px;
 }
@@ -73,9 +74,16 @@ hr {
     transition: all 0.3s;
 }
 
+.nav-bar .title {
+    cursor: pointer;
+    font-size: 30px;
+}
+
 .nav-bar-scr {
     height: 50px;
+
 }
+
 
 .nav-up {
     top: -100px;
@@ -96,6 +104,7 @@ hr {
 .menu li {
     margin: 10px 30px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 main {
@@ -126,7 +135,7 @@ main {
     transform:translateX(-50%);
 }
 
-.intro-txt {
+.intro-txt-wrap {
     position: absolute;
     height:89vh;
     width: 100%;
@@ -141,11 +150,18 @@ main {
     
     padding: 20px;
     box-sizing: border-box;
+}
 
+.intro-txt {
+    position: absolute;
+    top: 25px;
+    left: 50px;
 }
 
 .intro-txt p {
+
     font-size: 100px;
+
 }
 
 .intro-txt span {
@@ -155,57 +171,89 @@ main {
 
 
 .sec-2 {
+    position: relative;
     height: 700px;
 }
 
 .hopper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
     width: 400px;
     border-radius: 50%;
     margin: 30px;
+
+    z-index: 5;
+    
 }
 
 .hopper-intro {
-    border: solid 10px #306E97;
-    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 220px;
+
+    /* border: solid 10px #306E97;
+    border-radius: 5px; */
     color: #ffffff;
     height: 50%;
+    width: 50%;
 
     margin: 30px;
     padding: 10px;
+
+    opacity: 0;
 }
 
 .sec-3 {
-    height: 6000px;
+
+    color: #ffffff;
 }
+
+.work-wrap {
+    width: 100%;
+    height: 2220px;
+
+}
+
+.work-box {
+    position: sticky;
+    top: 20%;
+
+    width: 100%;
+    height: 500px;
+
+    margin-bottom: 200px;
+    padding: 20px 30px;
+    background-color: #244a64;
+
+    border-radius: 15px;
+    transition: all 1s;
+}
+
 
 .work-txt {
     float: left;
     width: 35%;
-    line-height: 2;
+    height: 100%;
+    line-height: 1.5;
 
-    color: #ffffff;
+
 }
+
 
 .work-img {
-    position: sticky;
-    top: 25%;
     float: right;
     width: 60%;
-    margin-bottom: 900px;
-
-}
-
-.nighthwaks {
-    top: 25%;
-    margin-bottom: 900px;
-}
-
-.HBR {
-    top: 20%;
+    height: 100%;
 }
 
 .work-img img {
     width: 100%;
+    height: 100%;
+
+    object-fit: contain;
 }
 
 .sec-4 {
@@ -414,7 +462,7 @@ main {
 
 
 
-/* https://getcssscan.com/css-box-shadow-examples
+/*
 
 http://rwdb.kr/interestedeffects/
 
@@ -424,12 +472,7 @@ https://ossam5.tistory.com/148  - 슬라이더 도움
 
 https://post.naver.com/viewer/postView.nhn?volumeNo=30975167&memberNo=15488287&vType=VERTICAL 철길옆의집
 
-https://blog.naver.com/PostView.nhn?blogId=ipssinhada2&logNo=222339440466&categoryNo=29&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search
-- 밤을 지새우는 사람들 설명
-http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=2500&key=20081023.22021212323 
-- 밤지사 인물
 
 https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=jessica1914&logNo=120212834525 =호퍼 작품해석
 
-그라디언트를 사용하여 하이라이트 조명효과
 */
