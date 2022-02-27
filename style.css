@@ -23,7 +23,7 @@ hr {
 
 
 .flex-space-between {
-    display: flex;
+    	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -31,7 +31,7 @@ hr {
 }
 
 .flex-end {
-    display: flex;
+    	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-end;
@@ -39,7 +39,7 @@ hr {
 }
 
 .flex-center {
-    display: flex;
+   	 display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
@@ -194,8 +194,6 @@ main {
     transform: translateX(-50%);
     top: 220px;
 
-    /* border: solid 10px #306E97;
-    border-radius: 5px; */
     color: #ffffff;
     height: 50%;
     width: 50%;
@@ -303,16 +301,6 @@ main {
 .slick-slide img {
     position: relative;
 }
-
-
-
-
-
-/* .slider .slick-slide {
-    display: inline-block;
-    vertical-align: middle;
-} */
-
 
 
 
@@ -455,24 +443,3 @@ main {
 }
 
 
-
-
-
-
-
-
-
-/*
-
-http://rwdb.kr/interestedeffects/
-
-https://dribbble.com/shots/4140537-Big-City-Lights-series-nr-17 
-
-https://ossam5.tistory.com/148  - 슬라이더 도움
-
-https://post.naver.com/viewer/postView.nhn?volumeNo=30975167&memberNo=15488287&vType=VERTICAL 철길옆의집
-
-
-https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=jessica1914&logNo=120212834525 =호퍼 작품해석
-
-*/
