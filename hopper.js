@@ -1,3 +1,4 @@
+// 슬라이더
 $(function(){
     $('.slider').slick({
         dots : true,
@@ -7,10 +8,12 @@ $(function(){
     });
 })
 
+// 제목을 누르면 첫 페이지로 이동
 $('.title').on('click',function(){
     $('html').scrollTop(0);
 })
 
+// 각 메뉴를 누르면 해당 위치로 이동
 for(let i=0; i<".menu li".length; i++){
     $(".menu li").eq(i).click(function() {
             $('html').scrollTop($('.page-title').eq(i).offset().top)
@@ -35,19 +38,18 @@ $(window).on('scroll',function(){
         }
 
     
-    //대표작
-    //1865-2362 2578 - 2922
+    // 스크롤 시 기존 카드는 서서히 사라짐
 
     var y = -1/497*($(window).scrollTop()) + 2362/497
     var x = -1/344*($(window).scrollTop()) + 1461/172
-    var z = -1/4970*($(window).scrollTop()) + 1367/994
-    var w = -1/3440*($(window).scrollTop()) + 3009/1720
 
 
+    $('.work-box').eq(0).css('opacity', y)
 
-    $('.work-box').eq(0).css('opacity', y)//.css('transform',`scale(${z})`)
-
-    $('.work-box').eq(1).css('opacity', x)//.css('transform',`scale(${ww})`)
+    $('.work-box').eq(1).css('opacity', x)
+    
+    
+    // 기존 카드의 크기도 작아짐
 
     if($(window).scrollTop() > 1992) {
         $('.work-box').eq(0).css('transform','scale(0.9)')
@@ -75,12 +77,15 @@ $(window).on('scroll',function(){
         $('.card-wrap').slice(2,4).css('top','150px')
     }
 
+    
+// 스크롤 위치 확인 
 //     $(window).on('scroll',function(){
 //         console.log($('html').scrollTop())
 //     })
 });
 
 
+// 스크롤 내리면 상단바가 사라지고 스크롤을 올리면 
 $(window).on('mousewheel',function(e){
     var wheel = e.originalEvent.wheelDelta
 
