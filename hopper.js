@@ -85,7 +85,7 @@ $(window).on('scroll',function(){
 });
 
 
-// 스크롤 내리면 상단바가 사라지고 스크롤을 올리면 
+// 스크롤 내리면 상단 메뉴바가 사라지고 스크롤을 올리면 메뉴바가 나타남
 $(window).on('mousewheel',function(e){
     var wheel = e.originalEvent.wheelDelta
 
